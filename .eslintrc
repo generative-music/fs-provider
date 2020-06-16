@@ -1,0 +1,18 @@
+{
+  "extends": "metalex9",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "overrides": [
+    {
+      "files": "./**/*.spec.js",
+      "env": {
+        "mocha": true
+      },
+      "rules": {
+        "no-unused-expressions": 0
+      }
+    }
+  ]
+}
