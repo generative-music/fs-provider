@@ -4,7 +4,7 @@ An audio sample file provider for Node.
 
 ## Usage
 
-This package exports a [factory function](#factory) which creates [`Provider`s](#provider). The factory requires a single object parameter which adheres to the schema defined in [@generative-music/sample-index-schema](https://github.com/generative-music/sample-index-schema) and contains URLs for audio sample files.
+This package exports a [factory function](#factory) which creates [`Provider`s](#provider). The factory requires a single object parameter which adheres to the schema defined in [@generative-music/sample-index-schema](https://github.com/generative-music/sample-index-schema) and contains file paths for audio sample files.
 
 ```javascript
 const makeProvider = require('@generative-music/fs-provider');
@@ -22,7 +22,7 @@ const provider = makeProvider(sampleIndex);
 
 ## Factory
 
-The default export of this package is a factory function for creating [`Provider`s](#provider).
+The only export of this package is a factory function for creating [`Provider`s](#provider).
 
 ### `makeProvider()`
 
